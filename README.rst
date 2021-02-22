@@ -28,33 +28,10 @@
 cs.ploneformdemo
 ================
 
-Tell me what your product does
-
-Features
---------
-
-- Can be bullet points
+This product is a demo product to check how a z3c.form based form is rendered in a Plone site. This is useful when designing the site, to check
+all the special features that a form needs, such as required fields, error messages, etc.
 
 
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
 
 
 Installation
@@ -73,12 +50,18 @@ Install cs.ploneformdemo by adding it to your buildout::
 and then running ``bin/buildout``
 
 
+After installing the addon using the Plone Control Panel, you can go to these URLs to check the forms:
+
+- Full form: http://plonesite.com/test-form-view
+- Full form with fieldsets: http://plonesite.com/test-form-fieldsets-view
+
+
+
 Contribute
 ----------
 
 - Issue Tracker: https://github.com/collective/cs.ploneformdemo/issues
 - Source Code: https://github.com/collective/cs.ploneformdemo
-- Documentation: https://docs.plone.org/foo/bar
 
 
 Support

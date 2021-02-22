@@ -14,7 +14,7 @@ long_description = '\n\n'.join([
 
 setup(
     name='cs.ploneformdemo',
-    version='1.0a1',
+    version='1.0',
     description="An add-on for Plone to create a demo form with all available field types",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/

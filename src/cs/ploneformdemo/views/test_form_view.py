@@ -91,32 +91,32 @@ class ITestFormSchema(Interface):
 
     title = schema.TextLine(
         title=u"Primary Field (Textline)",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         required=True,
     )
 
     text_field = schema.Text(
         title=u"Text Field",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         required=False,
         missing_value=u"",
     )
 
     textline_field = schema.TextLine(
         title=u"Textline field",
-        description=u"A simple input field",
+        description=u"This is the description or help text of the field and could be very long if required",
         required=False,
     )
 
     bool_field = schema.Bool(
         title=u"Boolean field",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         required=False,
     )
 
     choice_field = schema.Choice(
         title=u"Choice field",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         values=[u"One", u"Two", u"Three"],
         required=True,
     )
@@ -124,14 +124,14 @@ class ITestFormSchema(Interface):
     directives.widget(choice_field_radio=RadioFieldWidget)
     choice_field_radio = schema.Choice(
         title=u"Choice field with radio boxes",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         values=[u"One", u"Two", u"Three"],
         required=True,
     )
 
     choice_field_voc = schema.Choice(
         title=u"Choicefield with values from named vocabulary",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         vocabulary="plone.app.vocabularies.PortalTypes",
         required=False,
     )
@@ -139,14 +139,14 @@ class ITestFormSchema(Interface):
     directives.widget(choice_field_select=SelectFieldWidget)
     choice_field_select = schema.Choice(
         title=u"Choicefield with select2 widget",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         vocabulary="plone.app.vocabularies.PortalTypes",
         required=False,
     )
 
     list_field = schema.List(
         title=u"List field",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         value_type=schema.Choice(
             values=[u"Beginner", u"Advanced", u"Professional"],
         ),
@@ -157,7 +157,7 @@ class ITestFormSchema(Interface):
     directives.widget(list_field_checkbox=CheckBoxFieldWidget)
     list_field_checkbox = schema.List(
         title=u"List field with checkboxes",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         value_type=schema.Choice(
             values=[u"Beginner", u"Advanced", u"Professional"],
         ),
@@ -168,7 +168,7 @@ class ITestFormSchema(Interface):
     directives.widget(list_field_select=SelectFieldWidget)
     list_field_select = schema.List(
         title=u"List field with select widget",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         value_type=schema.Choice(
             values=[u"Beginner", u"Advanced", u"Professional"],
         ),
@@ -178,7 +178,7 @@ class ITestFormSchema(Interface):
 
     list_field_voc_unconstrained = schema.List(
         title=u"List field with values from vocabulary but not constrained to them.",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         value_type=schema.TextLine(),
         required=False,
         missing_value=[],
@@ -191,7 +191,7 @@ class ITestFormSchema(Interface):
 
     tuple_field = schema.Tuple(
         title=u"Tuple field",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         value_type=schema.Choice(
             values=[u"Beginner", u"Advanced", u"Professional"],
         ),
@@ -201,7 +201,7 @@ class ITestFormSchema(Interface):
 
     set_field = schema.Set(
         title=u"Set field",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         value_type=schema.Choice(
             values=[u"Beginner", u"Advanced", u"Professional"],
         ),
@@ -212,7 +212,7 @@ class ITestFormSchema(Interface):
     directives.widget(set_field_checkbox=CheckBoxFieldWidget)
     set_field_checkbox = schema.Set(
         title=u"Set field with checkboxes",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         value_type=schema.Choice(
             values=[u"Beginner", u"Advanced", u"Professional"],
         ),
@@ -223,45 +223,45 @@ class ITestFormSchema(Interface):
     # File fields
     image_field = NamedBlobImage(
         title=u"Image field",
-        description=u"A upload field for images",
+        description=u"This is the description or help text of the field and could be very long if required",
         required=False,
     )
 
     file_field = NamedBlobFile(
         title=u"File field",
-        description=u"A upload field for files",
+        description=u"This is the description or help text of the field and could be very long if required",
         required=False,
     )
 
     # Date and Time fields
     datetime_field = schema.Datetime(
         title=u"Datetime field",
-        description=u"Uses a date and time picker",
+        description=u"This is the description or help text of the field and could be very long if required",
         required=False,
     )
 
     date_field = schema.Date(
         title=u"Date field",
-        description=u"Uses a date picker",
+        description=u"This is the description or help text of the field and could be very long if required",
         required=False,
     )
 
     time_field = schema.Time(
         title=u"Time field",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         required=False,
     )
 
     timedelta_field = schema.Timedelta(
         title=u"Timedelta field",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         required=False,
     )
 
     # Relation Fields
     relationchoice_field = RelationChoice(
         title=u"Relationchoice field",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         vocabulary="plone.app.vocabularies.Catalog",
         required=False,
     )
@@ -276,7 +276,7 @@ class ITestFormSchema(Interface):
 
     relationlist_field = RelationList(
         title=u"Relationlist Field",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         default=[],
         value_type=RelationChoice(vocabulary="plone.app.vocabularies.Catalog"),
         required=False,
@@ -295,75 +295,75 @@ class ITestFormSchema(Interface):
     # Number fields
     int_field = schema.Int(
         title=u"Integer Field (e.g. 12)",
-        description=u"Allocated (maximum) number of objects",
+        description=u"This is the description or help text of the field and could be very long if required",
         required=False,
     )
 
     float_field = schema.Float(
         title=u"Float field (e.g. 12.2)",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         required=False,
     )
 
     # Text fields
     email_field = Email(
         title=u"Email field",
-        description=u"A simple input field for a email",
+        description=u"This is the description or help text of the field and could be very long if required",
         required=False,
     )
 
     uri_field = schema.URI(
         title=u"URI field",
-        description=u"A simple input field for a URLs",
+        description=u"This is the description or help text of the field and could be very long if required",
         required=False,
     )
 
     richtext_field = RichText(
         title=u"RichText field",
-        description=u"This uses a richtext editor.",
+        description=u"This is the description or help text of the field and could be very long if required",
         max_length=2000,
         required=False,
     )
 
     sourcetext_field = schema.SourceText(
         title=u"SourceText field",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         required=False,
     )
 
     ascii_field = schema.ASCII(
         title=u"ASCII field",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         required=False,
     )
 
     bytesline_field = schema.BytesLine(
         title=u"BytesLine field",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         required=False,
     )
 
     asciiline_field = schema.ASCIILine(
         title=u"ASCIILine field",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         required=False,
     )
 
     pythonidentifier_field = schema.PythonIdentifier(
         title=u"PythonIdentifier field",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         required=False,
     )
 
     dottedname_field = schema.DottedName(
         title=u"DottedName field",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         required=False,
     )
 
     dict_field = schema.Dict(
         title=u"Dict field",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         required=False,
         key_type=schema.TextLine(
             title=u"Key",
@@ -377,7 +377,7 @@ class ITestFormSchema(Interface):
 
     dict_field_with_choice = schema.Dict(
         title=u"Dict field with key and value as choice",
-        description=u"Description",
+        description=u"This is the description or help text of the field and could be very long if required",
         required=False,
         key_type=schema.Choice(
             title=u"Key",
@@ -459,9 +459,9 @@ class TestFormView(form.Form):
 
     def updateWidgets(self, *args, **kwargs):
         super(TestFormView, self).updateWidgets(*args, **kwargs)
-        self.widgets["int_field"].placeholder = "Idatzi balio bat hemen"
-        self.widgets["title"].placeholder = "Idatzi balio bat hemen"
-        self.widgets["text_field"].placeholder = "Idatzi balio bat hemen"
+        self.widgets["int_field"].placeholder = "This is the placeholder value for this field"
+        self.widgets["title"].placeholder = "This is the placeholder value for this field"
+        self.widgets["text_field"].placeholder = "This is the placeholder value for this field"
 
     @button.buttonAndHandler(_(u"Send"))
     def handleApply(self, action):

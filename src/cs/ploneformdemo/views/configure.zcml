@@ -1,0 +1,25 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="cs.ploneformdemo">
+
+  -*- extra stuff goes here -*-
+
+  <browser:page
+    name="test-form-view"
+    for="*"
+    class=".test_form_view.TestFormView"
+    layer="..interfaces.ICsPloneformdemoLayer"
+    permission="zope2.View"
+    />
+
+  <browser:page
+    name="test-form-fieldsets-view"
+    for="*"
+    class=".test_form_view.TestForm2View"
+    layer="..interfaces.ICsPloneformdemoLayer"
+    permission="zope2.View"
+    />
+
+</configure>
